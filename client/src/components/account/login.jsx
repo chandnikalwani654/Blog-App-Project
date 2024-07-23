@@ -7,12 +7,27 @@ const Component=styled(Box)`
    margin:auto;
    box-shadow: 5px 2px 5px 2px rgb(0 0 0/0.6);
 `
-const Image=styled("img")({
-    width:100,
+const Image1=styled("img")({
+    width:300,
     margin:"auto",
     display:"flex",
-    padding:"50px 0 0"
+    padding:"50px 0 0",
+    bordeRadius:"4",
+    position: "relative",
+    zIndex: "1",
+    top: "0",
+    left: "0" 
 
+});
+const Image2=styled("img")({
+    padding:"116px 0 0 485px",
+    position: "absolute",
+    zIndex: "2",
+    top: "0",
+    left: "0",
+    width: "6.5%",
+    height:"auto"
+   
 });
 
 const Wrapper=styled(Box)`
@@ -55,8 +70,10 @@ const signupInitialValues={
 }
 
 const Login = ()  => {
-   const imageURL = 'https://www.sesta.it/wp-content/uploads/2021/03/logo-blog-sesta-trasparente.png';
-   
+   const imageURL1 = 'https://cdn.dribbble.com/userupload/12426546/file/original-c1141e517b6528ed41375d95dfea6a21.jpg?resize=1600x1200';
+   const imageURL2 = 'https://www.sesta.it/wp-content/uploads/2021/03/logo-blog-sesta-trasparente.png';
+
+
    const[account,toggleAccount]= useState("login");
    const[signup,setSignup]=useState(signupInitialValues);
 
@@ -69,7 +86,8 @@ const Login = ()  => {
    return (
         <Component>
            <Box>
-             <Image src={imageURL} alt="login" />
+             <Image1 src={imageURL1} alt="login" />
+             <Image2 src={imageURL2} alt="blog" />
              {
                account==="login" ? 
              <Wrapper>
