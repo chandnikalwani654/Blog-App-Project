@@ -10,7 +10,7 @@ const Component=styled(Box)`
 // const Image1=styled("img")({
 //     width:300,
 //     margin:"auto",
-//     display:"flex",
+//     display:"f lex",
 //     padding:"50px 0 0",
 //     bordeRadius:"4",
 //     position: "relative",
@@ -33,7 +33,7 @@ const Image=styled("img")({
    width:100,
    margin:"auto", //margin auto display flex ke saath chalta h
    display:"flex",
-   padding:"50 0 0",
+   padding:"50px 0 0",
    
 
 
@@ -48,6 +48,15 @@ const Wrapper=styled(Box)`
       margin-top: 20px;
    };
 `
+
+
+const Text=styled(Typography)`
+    color:#878787;
+    font-size:16px;
+    text-align:center;
+
+`
+
 
 const LoginButton=styled(Button)`
    text-transform:none;
@@ -66,11 +75,7 @@ const SignupButton=styled(Button)`
    box-shadow:0 2px 4px 0 rgb(0 0 0/20%);
 `
 
-const Text=styled(Typography)`
-    color:#878787;
-    font-size:14px;
 
-`
 
 const signupInitialValues={
     name:"",
@@ -97,14 +102,14 @@ const Login = ()  => {
            <Box>
              {/* <Image1 src={imageURL1} alt="login" />
              <Image2 src={imageURL2} alt="blog" /> */}
-             <Image src={imageURL} alt="blog"></Image>
+             <Image src={imageURL} alt="login"></Image>
              {
                account==="login" ? 
              <Wrapper>
                 <TextField id="standard-basic" label="Enter Username" variant="standard" />
                 <TextField id="standard-basic" label="Enter Password" variant="standard" />
                 <LoginButton variant="contained">Login</LoginButton>
-                <Text style={ {textAlign:"center"}}>OR</Text> 
+                <Text >OR</Text> 
                 <SignupButton onClick={()=>toggleSignUp()}>Create an Account</SignupButton>
              </Wrapper>
 
