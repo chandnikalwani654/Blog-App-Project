@@ -9,6 +9,5 @@ import mongoose from 'mongoose';
     catch(error){
        console.log('Error while connecting with the database',error);
     }
-    
 }
 export default Connection;
