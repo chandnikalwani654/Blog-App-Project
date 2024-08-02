@@ -16,6 +16,7 @@ const userSchema=mongoose.Schema({
     }
 })
 
+//in which collection(suppose user) we have to pass this schema
 const user=mongoose.model('user',userSchema);
 
 export default user;
