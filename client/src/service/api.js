@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+import { API_NOTIFICATION_MESSAGES } from '../constants/config';
+
 const API_URL='https://localhost:8000';
 
 const axiosInstance=axios.create({
@@ -28,7 +30,7 @@ axiosInstance.interceptors.response.use(
         //Stop Global Loader
         return Promise.reject(processError(error));
     }
-)
+) 
 
 
 /////////////////////////////
@@ -44,16 +46,36 @@ const processResponse = (response) => {
     }
 }
 
+/////////////////////////////
+//If success -> return {isSuccess:true , data:Object}
+//If fail -> return {isFailure:true , status:string , msg:string , code:int}
+/////////////////////////////
+
 const processError = (error) => {
     if(error.response){
         //Request made and server responded with a status other that falls out of the range 2.x.x(200)
-        
+        console.log('ERROR IN RESPONSE:',error.toJSON());
+        return{
+            isError:true,
+            msg:API_NOTIFICATION_MESSAGES.responseFailure,
+            code:error.response.status
+        }
     } else if(error.request){
-        //Request made but no response was received
-        
+        //Request made but no response was received(eg- frontend not connected to backend)
+        console.log('ERROR IN REQUEST:',error.toJSON());
+        return{
+            isError:true,
+            msg:API_NOTIFICATION_MESSAGES.requestFailure,
+            code:""
+        }
     } else {
-        //Something happened in setting up request that triggers an error 
-
+        //Something happened in setting up request that triggers an error(front-end mai kuch problem h) 
+        console.log('ERROR IN NETWORK:',error.toJSON());
+        return{
+            isError:true,
+            msg:API_NOTIFICATION_MESSAGES.networkError,
+            code:""
+        }
     }
 }
 
