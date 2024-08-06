@@ -18,6 +18,6 @@ app.listen(port,()=>{
 const USERNAME=process.env.DB_USERNAME;
 const PASSWORD=process.env.DB_PASSWORD;
 
-Connection(USERNAME,PASSWORD); 
+Connection(USERNAME,PASSWORD);
 
 
