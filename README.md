@@ -24,17 +24,17 @@ The Blog App is a full-stack web application that allows users to create, read, 
 
 ### Prerequisites
 - Node.js
-- npm (or yarn)
+- npm 
 - MongoDB
 
 ### Backend Setup
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/blog-app.git
+    git clone https://github.com/githubchandni/Blog-App-Project.git
     ```
 2. Navigate to the backend directory:
     ```bash
-    cd blog-app/backend
+    cd Blog-App-Project/server
     ```
 3. Install the dependencies:
     ```bash
