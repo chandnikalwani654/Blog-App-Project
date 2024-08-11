@@ -74,7 +74,7 @@ The Blog App is a full-stack web application that allows users to create, read, 
 
 ## API Endpoints
 ### Auth
-- **POST /api/auth/register**: Register a new user
+- **POST /api/auth/signup**: Register a new user
 - **POST /api/auth/login**: Log in a user
 
 ### Posts
@@ -85,7 +85,7 @@ The Blog App is a full-stack web application that allows users to create, read, 
 - **DELETE /api/posts/:id**: Delete a post by ID
 
 ## Technologies Used
-- **Frontend**: React, Redux, Axios, Bootstrap (or any other CSS framework)
+- **Frontend**: React, MaterialUI, Bootstrap (or any other CSS framework)
 - **Backend**: Node.js, Express.js, MongoDB, Mongoose, JSON Web Token (JWT)
 - **Others**: 
   - **Testing**: Jest, Supertest
@@ -105,4 +105,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 - **Your Name** - [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
-- **Project Link**: https://github.com/yourusername/blog-app
+- **Project Link**: https://github.com/githubchandni/Blog-App-Project
