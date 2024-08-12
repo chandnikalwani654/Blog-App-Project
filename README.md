@@ -42,15 +42,15 @@ The Blog App is a full-stack web application that allows users to create, read, 
     ```
 4. Set up your environment variables. Create a `.env` file in the `backend` directory and add the following:
     ```env
-    PORT=5000
-    MONGO_URI=your_mongo_db_connection_string
+    PORT=8000
+    MONGO_URI=mongodb+srv://${username}:${password}@blog.0fqelnv.mongodb.net/?retryWrites=true&w=majority&appName=Blog
     JWT_SECRET=your_jwt_secret
     ```
 5. Start the server:
     ```bash
     npm start
     ```
-    The server will be running on `http://localhost:5000`.
+    The server will be running on `http://localhost:8000`.
 
 ### Frontend Setup
 1. Navigate to the frontend directory:
