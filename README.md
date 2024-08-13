@@ -55,7 +55,7 @@ The Blog App is a full-stack web application that allows users to create, read, 
 ### Frontend Setup
 1. Navigate to the frontend directory:
     ```bash
-    cd ../frontend
+    cd ../client
     ```
 2. Install the dependencies:
     ```bash
