@@ -87,9 +87,7 @@ The Blog App is a full-stack web application that allows users to create, read, 
 ## Technologies Used
 - **Frontend**: React, MaterialUI, Bootstrap 
 - **Backend**: Node.js, Express.js, MongoDB, Mongoose, JSON Web Token (JWT)
-- **Others**: 
-  - **Testing**: Jest, Supertest
-  - **Linting**: ESLint, Prettier
+
 
 
 
