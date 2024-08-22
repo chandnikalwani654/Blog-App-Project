@@ -80,7 +80,7 @@ The Blog App is a full-stack web application that allows users to create, read, 
 ### Posts
 - **GET /api/posts**: Get all posts
 - **GET /api/posts/:id**: Get a specific post by ID
-- **POST /api/posts**: Create a new post
+- **POST /api/**: Create a new post
 - **PUT /api/posts/:id**: Update a post by ID
 - **DELETE /api/posts/:id**: Delete a post by ID
 
